@@ -13,3 +13,15 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+jQuery.ajaxSetup({ 
+  'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
+})
+
+$(document).ready(function() {
+	$('#dateChange').click(function (){
+		$('#currentdate').html($(this).val());
+//        $(this).css("background-color", "blue");
+        $('#setdate').html("<% date = Date.tomorrow %>")
+     });
+});
