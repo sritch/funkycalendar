@@ -1,9 +1,9 @@
-	<div class="setdate"><% date = Date.current %></div>
-	<% @events.each do |event| %>
-		<% if event.eventdate === date %>
-		<div class="span6 offset3">
-			<img src="/assets/pirate.svg" width="150" class="img pull-left" style="margin-right: 20px; margin-top: -20px; display: inline;">
-			<h3 style="display: inline;">It's <%= event.title %>!</h3>
-		</div>
-			<% end %>
-	<% end %>	
+<% date = Date.current %>
+<% @events.each do |event| %>
+	<% if event.eventdate === date %>
+	<div class="span6 offset3">
+		<img src="/assets/pirate.svg" width="150" class="img pull-left" style="margin-right: 20px; margin-top: -20px; display: inline;">
+		<h3 style="display: inline;">It's <%= event.title %>!</h3>
+	</div>
+		<% end %>
+<% end %>

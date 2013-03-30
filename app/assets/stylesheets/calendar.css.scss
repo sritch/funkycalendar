@@ -36,12 +36,14 @@ button {
 	font-size: 18px;
 }
 
-td:hover {
+/*td:hover {
 	background-color: #C6E070;
-}
+}*/
 
 .notmonth {
 	background-color: grey;
+	visibility: hidden;
+
 }
 
 #calendar {
