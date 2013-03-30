@@ -1,0 +1,16 @@
+<h2 id="month">
+    <span class="pull-left"><%= link_to "<", :month => (@date.beginning_of_month-1).strftime("%Y-%m-01") %></span>
+    <%= h @date.strftime("%B %Y") %>
+    <span class="pull-right"><%= link_to ">", :month => (@date.end_of_month+1).strftime("%Y-%m-01") %></span>
+</h2>
+  <%= calendar_for(@events, :year => @date.year, :month => @date.month) do |t| %>
+  <%= t.head('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun') %>
+  <%= t.day(:day_method => :eventdate) do |date, events| %>
+    <%= date.day %>
+    <ul>
+    <% events.each do |event| %>
+      <li><%= h(event.title) %></li>
+    <% end %>
+	</ul>
+  <% end %>
+<% end %>

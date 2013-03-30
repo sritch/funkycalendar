@@ -12,6 +12,15 @@ body {
 .table td {
 	padding: 0px;
 	height: 40px;
+
+}
+
+table {
+	border: 1px solid black;
+}
+
+td {
+	border: 1px solid black;
 }
 
 h1, h4 {
@@ -27,7 +36,18 @@ button {
 	font-size: 18px;
 }
 
-
-button:hover {
+td:hover {
 	background-color: #C6E070;
+}
+
+.notmonth {
+	background-color: grey;
+}
+
+#calendar {
+	clear: both;
+}
+
+#month {
+	text-align: center;
 }

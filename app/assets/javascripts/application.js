@@ -19,9 +19,8 @@ jQuery.ajaxSetup({
 })
 
 $(document).ready(function() {
-	$('#dateChange').click(function (){
-		$('#currentdate').html($(this).val());
-//        $(this).css("background-color", "blue");
-        $('#setdate').html("<% date = Date.tomorrow %>")
+	$('#month a').live("click", function (){
+		$.get(this.href, null, null, 'script');
+        return false;
      });
 });

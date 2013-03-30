@@ -14,9 +14,9 @@
 </head>
 <body>
 	<div class="container">
-			<h1>Funky Calendar</h1>
+			<h1><%= link_to "Funky Calendar" , '/' %></h1>
 			<h4>Wondering what wacky day it is today?</h4>
-			Today is <span id="currentdate"><%= Date.current.to_formatted_s(:long) %></span>
+			Today is <span id="currentdate"><%= Date.current.to_formatted_s(:long) %></span><br><br>
 		<%= yield %>
 	</div>
 
