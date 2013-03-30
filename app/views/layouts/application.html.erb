@@ -19,7 +19,7 @@
 	<div class="container">
 			
 			<h3>Wondering what wacky day it is today?</h3>
-			Today is <span id="currentdate"><%= Date.current.to_formatted_s(:long) %></span><br><br>
+
 		<%= yield %>
 	</div>
 
@@ -27,6 +27,7 @@
 <footer>
 	<div class="container" style="margin-top: 15px; font-size: 14px; margin-bottom: 20px;">
 		A Project By: <a href="http://staticsteven.com">staticsteven</a>
+		<%= link_to( "FAQ", "/faq", :class => "pull-right") %>
 	</div>
 </footer>
 </html>

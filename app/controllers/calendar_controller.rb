@@ -5,4 +5,7 @@ class CalendarController < ApplicationController
 		@date = params[:month] ? Date.parse(params[:month].gsub('-', '/')) : Date.today
 	end
 
+	def faq
+	end
+
 end

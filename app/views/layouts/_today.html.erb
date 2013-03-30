@@ -1,13 +1,25 @@
 <% date = Time.now.to_date %>
-<% @events.each do |event| %>
-	<% if event.eventdate === date %>
-	<div class="span4 offset4 todayEvent">
-		<% if event.image %>
-		<%= image_tag("/assets/#{event.image}", :width => '100', :class => "img pull-left svg") %>
-		<% else %>
-		<%= image_tag("http://placehold.it/100x100", :class => "img img-circle pull-left") %>
-		<% end %>
-		<h4 style="display: inline;">It's <%= event.title %>!</h4>
+<div class="row" style="">
+	<div class="span3 offset2 dateToday">
+		<span id="currentdate">
+			<%= h date.strftime("%B") %><br>
+			<span id="dayDate"><%= h date.day %></span>
+		</span>
 	</div>
+	<div class="span5 todayEvent">
+		<% @events.each do |event| %>
+		<% if event.eventdate === date %>
+			
+				<% if event.image %>
+					<%= image_tag("/assets/#{event.image}", :width => '250px', :class => "img pull-left svg") %>
+				<% else %>
+					<%= image_tag("http://placehold.it/100x100", :class => "img img-circle pull-left") %>
+				<% end %>
+				<span class="eventName">It's <%= event.title %>!</span>
+				<%= link_to("(Source)", event.link, :class =>"eventSource") %>
+			</div>
 		<% end %>
+	
+		
 <% end %>
+</div>

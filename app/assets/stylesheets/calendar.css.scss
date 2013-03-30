@@ -12,8 +12,10 @@ body {
 	background-color: #C6E070;
 	width: 100%;
 	margin-top: -10px;
-	height: 50px;
+	min-height: 50px;
 	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .header a {
@@ -77,8 +79,26 @@ button {
 	visibility: hidden;
 }
 
+.dateToday {
+	background-color: grey;
+	width: 180px;
+	text-align: center;
+	color: white;
+	min-height: 140px;
+	padding: 5px;
+}
+
+#dayDate {
+	font-size: 110px;
+	font-weight: bold;
+	line-height: 120px;
+}
+
 .todayEvent {
-	clear: both;
+	background-color: #C6E070;
+	min-height: 110px;
+	color: white;
+	padding: 20px;
 }
 
 #calendar {
@@ -86,15 +106,20 @@ button {
 	font-size: 12px;
 }
 
+.eventName {
+	display: inline;
+	font-size: 24px;
+	font-weight: bold;
+}
+
 svg {
 	margin-right: 10px; 
-	margin-top: -20px; 
 	display: inline; 
-	margin-bottom: 20px;
+	width: 150px;
 }
 
 svg path {
-    fill: #C6E070;
+    fill: white;
 }
 
 .day {
@@ -104,4 +129,9 @@ svg path {
 
 #month {
 	text-align: center;
+}
+
+.eventSource {
+	font-size: 10px;
+	color: black;
 }
