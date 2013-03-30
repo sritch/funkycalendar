@@ -8,6 +8,30 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+.header {
+	background-color: #C6E070;
+	width: 100%;
+	margin-top: -10px;
+	height: 50px;
+	text-align: center;
+}
+
+.header a {
+	color: white;
+}
+
+.header a:hover {
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	.header {
+	  margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+	}
+}
 
 .table td {
 	padding: 0px;
@@ -21,10 +45,15 @@ table {
 
 td {
 	border: 1px solid black;
+	vertical-align: top;
 }
 
 h1, h4 {
 	margin-left: 30px;
+}
+
+h3 {
+	text-align: center;
 }
 
 button {
@@ -42,12 +71,24 @@ button {
 
 .notmonth {
 	background-color: grey;
-	visibility: hidden;
+}
 
+.notmonth ul {
+	visibility: hidden;
+}
+
+.todayEvent {
+	clear: both;
 }
 
 #calendar {
 	clear: both;
+	font-size: 12px;
+}
+
+.day {
+	font-size: 20px;
+	padding: 5px;
 }
 
 #month {

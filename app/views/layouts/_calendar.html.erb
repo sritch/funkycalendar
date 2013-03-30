@@ -6,7 +6,7 @@
   <%= calendar_for(@events, :year => @date.year, :month => @date.month) do |t| %>
   <%= t.head('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun') %>
   <%= t.day(:day_method => :eventdate) do |date, events| %>
-    <%= date.day %>
+    <span class="day"><%= date.day %></span>
     <ul>
     <% events.each do |event| %>
       <li><%= h(event.title) %></li>
