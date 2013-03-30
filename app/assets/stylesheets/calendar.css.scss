@@ -86,6 +86,17 @@ button {
 	font-size: 12px;
 }
 
+svg {
+	margin-right: 10px; 
+	margin-top: -20px; 
+	display: inline; 
+	margin-bottom: 20px;
+}
+
+svg path {
+    fill: #C6E070;
+}
+
 .day {
 	font-size: 20px;
 	padding: 5px;

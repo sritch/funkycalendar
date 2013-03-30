@@ -2,7 +2,11 @@
 <% @events.each do |event| %>
 	<% if event.eventdate === date %>
 	<div class="span4 offset4 todayEvent">
-		<img src="/assets/pirate.svg" width="100" class="img pull-left" style="margin-right: 10px; margin-top: -20px; display: inline; margin-bottom: 20px;">
+		<% if event.image %>
+		<%= image_tag("/assets/#{event.image}", :width => '100', :class => "img pull-left svg") %>
+		<% else %>
+		<%= image_tag("http://placehold.it/100x100", :class => "img img-circle pull-left") %>
+		<% end %>
 		<h4 style="display: inline;">It's <%= event.title %>!</h4>
 	</div>
 		<% end %>
