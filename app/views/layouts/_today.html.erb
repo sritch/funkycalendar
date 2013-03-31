@@ -4,22 +4,19 @@
 			<%= h @eventDate.strftime("%B") %><br>
 			<span id="dayDate"><%= h @eventDate.day %></span>
 		</span>
-		<br><%= link_to "tomorrow", :day => @eventDate.tomorrow, :remote => true %>
 	</div>
 	<div class="span5 todayEvent">
 		<% @events.each do |event| %>
 		<% if event.eventdate === @eventDate %>
-			
 				<% if event.image %>
-					<%= image_tag("/assets/#{event.image}", :height => '150px', :class => "img pull-left svg") %>
+					<%= image_tag("/assets/#{event.image}", :class => "img pull-left svg") %>
 				<% else %>
 					<%= image_tag("http://placehold.it/100x100", :class => "img img-circle pull-left") %>
 				<% end %>
-				<span class="eventName">It's <%= event.title %>!</span>
+				<span class="eventName">It's <%= event.title %>!</span><br>
 				<%= link_to("(Source)", event.link, :class =>"eventSource") %>
 			</div>
 		<% end %>
-	
 		
 <% end %>
 </div>

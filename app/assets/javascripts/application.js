@@ -19,11 +19,7 @@ jQuery.ajaxSetup({
 })
 
 $(document).ready(function() {
-	$('#month a').live("click", function (){
-		$.get(this.href, null, null, 'script');
-        return false;
-     });
-    $('.dateToday a').live("click", function (){
+    $('#calendar a').live("click", function (){
         $.get(this.href, null, null, 'script');
         return false;
      });

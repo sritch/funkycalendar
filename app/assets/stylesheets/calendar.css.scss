@@ -43,10 +43,6 @@ table {
 	border: 1px solid black;
 }
 
-td {
-	border: 1px solid black;
-	vertical-align: top;
-}
 
 h1, h4 {
 	margin-left: 30px;
@@ -65,16 +61,26 @@ button {
 	font-size: 18px;
 }
 
-/*td:hover {
-	background-color: #C6E070;
-}*/
 
-.notmonth {
-	background-color: grey;
+td {
+	border: 1px solid black;
+	width: 80px;
 }
 
-.notmonth ul {
-	visibility: hidden;
+td a {
+	color: black;
+}
+
+td a:hover {
+	text-decoration: none;
+}
+
+td:hover {
+	background-color: #C6E070;
+}
+
+.notmonth {
+	background-color: #cccccc;
 }
 
 .dateToday {
@@ -83,7 +89,7 @@ button {
 	color: #C6E070;
 	min-height: 140px;
 	padding: 5px;
-	border: 5px solid #C6E070;
+	border: 6px solid #C6E070;
 }
 
 #dayDate {
@@ -102,6 +108,7 @@ button {
 #calendar {
 	clear: both;
 	font-size: 12px;
+	text-align: center;
 }
 
 .eventName {

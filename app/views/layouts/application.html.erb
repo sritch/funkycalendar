@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div class="header">
-		<h1><%= link_to "Wondering what wacky day it is today?" , '/' %></h1>
+		<h1>Wondering what wacky day it is today?</h1>
 	</div>
 	<div class="container">
 		<%= yield %>
@@ -22,8 +22,8 @@
 
 </body>
 <footer>
-	<div class="container" style="margin-top: 15px; font-size: 14px; margin-bottom: 20px;">
-		A Project By: <a href="http://staticsteven.com">staticsteven</a>
+	<div class="span10 offset2" style="margin-top: 15px; font-size: 14px; margin-bottom: 20px;">
+		<%= link_to("Funky Calendar", '/') %> - A Project By <a href="http://staticsteven.com">staticsteven</a>
 		<%= link_to( "FAQ", "/faq", :class => "pull-right") %>
 	</div>
 </footer>
