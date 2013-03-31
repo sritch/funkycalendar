@@ -9,17 +9,15 @@ body {
 }
 
 .header {
-	background-color: #C6E070;
-	width: 100%;
-	margin-top: -10px;
 	min-height: 50px;
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .header a {
-	color: white;
+	color: black;
 }
 
 .header a:hover {
@@ -80,12 +78,12 @@ button {
 }
 
 .dateToday {
-	background-color: grey;
 	width: 180px;
 	text-align: center;
-	color: white;
+	color: #C6E070;
 	min-height: 140px;
 	padding: 5px;
+	border: 5px solid #C6E070;
 }
 
 #dayDate {
@@ -95,9 +93,9 @@ button {
 }
 
 .todayEvent {
-	background-color: #C6E070;
+	border: 6px solid black;
 	min-height: 110px;
-	color: white;
+	color: black;
 	padding: 20px;
 }
 
