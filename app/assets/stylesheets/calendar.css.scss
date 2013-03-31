@@ -90,6 +90,7 @@ td:hover {
 	min-height: 140px;
 	padding: 5px;
 	border: 6px solid #C6E070;
+	margin-bottom: 30px;
 }
 
 #dayDate {
@@ -117,14 +118,11 @@ td:hover {
 	font-weight: bold;
 }
 
-svg {
+img {
 	margin-right: 10px; 
+	margin-left: -10px;
 	display: inline; 
-	width: 150px;
-}
-
-svg path {
-    fill: white;
+	height: 110px;
 }
 
 .day {

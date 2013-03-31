@@ -9,7 +9,7 @@
 		<% @events.each do |event| %>
 		<% if event.eventdate === @eventDate %>
 				<% if event.image %>
-					<%= image_tag("/assets/#{event.image}", :class => "img pull-left svg") %>
+					<%= image_tag("/assets/#{event.image}", :class => "img pull-left") %>
 				<% else %>
 					<%= image_tag("http://placehold.it/100x100", :class => "img img-circle pull-left") %>
 				<% end %>
