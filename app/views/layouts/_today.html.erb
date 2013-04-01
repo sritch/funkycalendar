@@ -1,7 +1,31 @@
 <div class="row" style="">
-	<div class="span3 offset2 dateToday">
+	<% if @eventDate.strftime("%B") === "January" %>
+	<div class="span3 offset2 dateToday january">
+	<% elsif @eventDate.strftime("%B") === "February"%>
+	<div class="span3 offset2 dateToday february">
+	<% elsif @eventDate.strftime("%B") === "March"%>
+	<div class="span3 offset2 dateToday march">
+	<% elsif @eventDate.strftime("%B") === "April"%>
+	<div class="span3 offset2 dateToday april">
+	<% elsif @eventDate.strftime("%B") === "May"%>
+	<div class="span3 offset2 dateToday may">
+	<% elsif @eventDate.strftime("%B") === "June"%>
+	<div class="span3 offset2 dateToday june">
+	<% elsif @eventDate.strftime("%B") === "July"%>
+	<div class="span3 offset2 dateToday july">
+	<% elsif @eventDate.strftime("%B") === "August"%>
+	<div class="span3 offset2 dateToday august">
+	<% elsif @eventDate.strftime("%B") === "September"%>
+	<div class="span3 offset2 dateToday september">
+	<% elsif @eventDate.strftime("%B") === "October"%>
+	<div class="span3 offset2 dateToday october">
+	<% elsif @eventDate.strftime("%B") === "November"%>
+	<div class="span3 offset2 dateToday november">
+	<% elsif @eventDate.strftime("%B") === "December"%>
+	<div class="span3 offset2 dateToday december">
+		<% end %>
 		<span id="currentdate">
-			<%= h @eventDate.strftime("%B") %><br>
+			<%= @eventDate.strftime("%B") %><br>
 			<span id="dayDate"><%= h @eventDate.day %></span>
 		</span>
 	</div>

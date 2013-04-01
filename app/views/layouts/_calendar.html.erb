@@ -7,7 +7,7 @@
   <%= calendar_for(@events, :year => @date.year, :month => @date.month) do |t| %>
     <%= t.head('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun') %>
     <%= t.day(:day_method => :eventdate) do |date, events| %>
-      <span class="day"><%= link_to date.day, :day => date , :remote => true %></span>
+      <div class="day"><%= link_to(date.day,  {:day => date }, :remote => true, :class => "btn dayBtn") %></div>
     <% end %>
   <% end %>
 </div>

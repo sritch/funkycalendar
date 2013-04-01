@@ -31,16 +31,30 @@ body {
       padding-left: 20px;
       padding-right: 20px;
 	}
+
+	.todayEvent {
+		min-height: 150px !important; 
+	}
+
+	.dateToday {
+		margin-left: 35%;
+	}
 }
 
-.table td {
-	padding: 0px;
-	height: 40px;
-
+@media (max-width: 624px) {
+	.dateToday {
+		margin-left: 32%;
+	}
 }
+
+@media (max-width: 499px) {
+	.dateToday {
+		margin-left: 25%;
+	}
+}
+
 
 table {
-	border: 1px solid black;
 }
 
 
@@ -63,8 +77,9 @@ button {
 
 
 td {
-	border: 1px solid black;
-	width: 80px;
+	width: 60px;
+	padding: 0px;
+	margin: 0px;
 }
 
 td a {
@@ -75,21 +90,15 @@ td a:hover {
 	text-decoration: none;
 }
 
-td:hover {
-	background-color: #C6E070;
-}
-
 .notmonth {
-	background-color: #cccccc;
+	visibility: hidden;
 }
 
 .dateToday {
 	width: 180px;
 	text-align: center;
-	color: #C6E070;
 	min-height: 140px;
 	padding: 5px;
-	border: 6px solid #C6E070;
 	margin-bottom: 30px;
 }
 
@@ -127,7 +136,18 @@ img {
 
 .day {
 	font-size: 20px;
-	padding: 5px;
+	width: 30px;
+	padding: 0px;
+}
+
+.dayBtn {
+	width: 100%;
+	height: 20px;
+	margin: 0px;
+	border-radius: 0px;
+	border: none;
+	background: white;
+	box-shadow: none;
 }
 
 #month {
@@ -137,4 +157,56 @@ img {
 .eventSource {
 	font-size: 10px;
 	color: black;
+}
+
+.january {
+	border: 6px solid #cccccc;
+	color: #ccc;
+}
+
+.february {
+	border: 6px solid #f7b821;
+	color: #f7b821;
+}
+
+.march {
+	border: 6px solid #f06f6f;
+	color: #f06f6f;
+}
+
+.april {
+	border: 6px solid #bbe65f;
+	color: #bbe65f;
+}
+.may {
+	border: 6px solid #8ee3c2;
+	color: #8ee3c2;
+}
+.june {
+	border: 6px solid #90dadf;
+	color: #90dadf;
+}
+.july {
+	border: 6px solid #85b6df;
+	color: #85b6df;
+}
+.august {
+	border: 6px solid #d291ed;
+	color: #d291ed;
+}
+.september {
+	border: 6px solid #fc8ad3;
+	color: #fc8ad3;
+}
+.october {
+	border: 6px solid #972626;
+	color: #972626;
+}
+.november {
+	border: 6px solid #0d6a95;
+	color: #0d6a95;
+}
+.december {
+	border: 6px solid #141657;
+	color: #141657;
 }
