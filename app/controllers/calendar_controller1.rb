@@ -6,6 +6,14 @@ class CalendarController < ApplicationController
 		@eventDate = params[:day] ? Date.parse(params[:day].gsub('-', '/')) : Time.now.to_date
 	end
 
+	def update_today
+		render :partial => 'layouts/today'
+	end
+
+	def update_calendar
+		render :partial => 'layouts/calendar'
+	end
+
 	def faq
 	end
 
