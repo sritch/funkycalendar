@@ -12,15 +12,20 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
 
 jQuery.ajaxSetup({ 
   'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
 })
 
 $(document).ready(function() {
-    $('#calendar a').live("click", function (){
-        $.get(this.href, null, null, 'script');
+	$('#month a').live("click", function (){
+		$.get(this.href, null, null, 'script');
+		dater = "month"
+        return false;
+     });
+	$('.day a').live("click", function (){
+		$.get(this.href, null, null, 'script');
+		dater = "day"
         return false;
      });
 });

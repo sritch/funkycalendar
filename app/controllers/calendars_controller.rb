@@ -4,6 +4,18 @@ class CalendarsController < ApplicationController
 		@events = Event.all
 		@date = params[:month] ? Date.parse(params[:month].gsub('-', '/')) : Time.now.to_date
 		@eventDate = params[:day] ? Date.parse(params[:day].gsub('-', '/')) : Time.now.to_date
+
+	respond_to do |format|
+	  format.html {
+	  	@events = Event.all
+		@date = params[:month] ? Date.parse(params[:month].gsub('-', '/')) : Time.now.to_date
+		@eventDate = params[:day] ? Date.parse(params[:day].gsub('-', '/')) : Time.now.to_date
+	  }	
+	  format.js {
+
+	  }
+	 end
+
 	end
 
 	def update_today
@@ -16,7 +28,7 @@ class CalendarsController < ApplicationController
 	def update_calendar
 	params[:month] = Date.parse(params[:month]).strftime("%Y-%m-01")
 	 respond_to do |format|
-	   format.js{render}
+	   format.js{render :layout => false}
 	 end
 	end
 

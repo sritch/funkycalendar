@@ -1,3 +1,5 @@
-alert('testing')
-$("#calendar").html("<%= escape_javascript(render('layouts/calendar')) %>");
-$("#today").html("<%= escape_javascript(render('layouts/today')) %>");
+if (dater == "month") {
+	$("#calendar").html("<%= escape_javascript(render('layouts/calendar')) %>");
+} else {
+	$("#today").html("<%= escape_javascript(render('layouts/today')) %>");
+}

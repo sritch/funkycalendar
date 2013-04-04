@@ -1,8 +1,9 @@
 Funkycalendar::Application.routes.draw do
 
 
-get "/calendars/update_calendar" => "calendars#update_calendar" 
-get "/calendars/update_today" => "calendars#update_today" 
+#get "/calendars/update_calendar" => "calendars#index" 
+
+#get "/calendars/update_today" => "calendars#update_today" 
 resources :calendars 
 
 root :to => "calendars#index" 
