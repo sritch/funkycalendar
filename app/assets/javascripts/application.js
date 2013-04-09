@@ -28,4 +28,9 @@ $(document).ready(function() {
 		dater = "day"
         return false;
      });
+	$('#random').live("click", function (){
+		$.get(this.href, null, null, 'script');
+		dater = "day"
+        return false;
+     });
 });

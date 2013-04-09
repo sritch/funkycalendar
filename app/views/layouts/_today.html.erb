@@ -1,3 +1,4 @@
+<%= link_to "Random", {:day => rand(Date.new(2013,1,1)..Date.new(2013,12,31)) }, :remote => true, :id => "random", :class => "btn btn-info" %>
 <div class="row" style="">
 	<% if @eventDate.strftime("%B") === "January" %>
 	<div class="span3 offset2 dateToday january">
@@ -41,6 +42,5 @@
 				<%= link_to("(Source)", event.link, :class =>"eventSource") %>
 			</div>
 		<% end %>
-		
 <% end %>
 </div>
