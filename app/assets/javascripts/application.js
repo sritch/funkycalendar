@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require hook
 
 jQuery.ajaxSetup({ 
   'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
