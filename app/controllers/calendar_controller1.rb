@@ -4,6 +4,7 @@ class CalendarController < ApplicationController
 		@events = Event.all
 		@date = params[:month] ? Date.parse(params[:month].gsub('-', '/')) : Time.now.to_date
 		@eventDate = params[:day] ? Date.parse(params[:day].gsub('-', '/')) : Time.now.to_date
+		@eventsToday = Event.where(:eventdate => Time.now.to_date)
 		respond_to	do |format|
 			format.html
 			format.js
