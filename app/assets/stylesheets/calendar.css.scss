@@ -53,6 +53,30 @@ body {
 	}
 }
 
+@media (max-width: 767px) {
+	#randomness {
+	width: 100% !important;
+	}
+
+	.btnRandom {
+		float: left;
+	}
+
+	.btnToday {
+		float: right;
+	}
+}
+
+@media (min-width: 768px) {
+
+
+	#randomness {
+	width: 202px;
+	text-align: center;
+	}
+
+}
+
 
 table {
 }
@@ -108,11 +132,18 @@ td a:hover {
 	line-height: 120px;
 }
 
+.calendarBox {
+	border: 6px solid black;
+	padding: 0px 20px 20px 20px;
+	text-align: center;
+}
+
 .todayEvent {
 	border: 6px solid black;
 	min-height: 110px;
 	color: black;
 	padding: 20px;
+	margin-bottom: 20px;
 }
 
 #calendar {
@@ -212,5 +243,28 @@ img {
 }
 
 #random {
-	display: none;	
+	margin-bottom: 20px;
+	width: 120px;
+	height: 20px;
+	padding: 10px;
+	border-radius: 0px;
+	border: none;
+	box-shadow: none;
+}
+
+.btnToday {
+	background: #2c3e52;
+}
+
+.btnRandom {
+	background: #f06f6f;
+}
+
+.randomButton a {
+	color: white;
+}
+
+
+.randomButton a:hover {
+	color: white;
 }

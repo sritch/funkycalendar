@@ -1,0 +1,4 @@
+<div class="randomButton">
+<%= link_to "Random", {:day => rand(Date.new(2013,1,1)..Date.new(2013,12,31)) }, :remote => true, :id => "random", :class => "btn btnRandom" %><br class="visible-desktop">
+<%= link_to "Today", {:day => Time.current.to_date }, :remote => true, :id => "random", :class => "btn btnToday" %>
+</div>

@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require hook
 
 jQuery.ajaxSetup({ 
   'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
@@ -29,9 +28,9 @@ $(document).ready(function() {
 		dater = "day"
         return false;
      });
-	$('#random').live("click", function (){
+	$('.randomButton a').live("click", function (){
 		$.get(this.href, null, null, 'script');
-		dater = "day"
+		dater = "random"
         return false;
      });
 });
