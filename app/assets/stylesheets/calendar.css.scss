@@ -39,6 +39,11 @@ body {
 	.dateToday {
 		margin-left: 35%;
 	}
+
+	#calendar {
+		width: 100% !important;
+	}
+
 }
 
 @media (max-width: 624px) {
@@ -58,20 +63,13 @@ body {
 	width: 100% !important;
 	}
 
-	.btnRandom {
-		float: left;
-	}
-
-	.btnToday {
-		float: right;
-	}
+	
 }
 
 @media (min-width: 768px) {
 
 
 	#randomness {
-	width: 202px;
 	text-align: center;
 	}
 
@@ -150,6 +148,9 @@ td a:hover {
 	clear: both;
 	font-size: 12px;
 	text-align: center;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .eventName {
@@ -244,7 +245,7 @@ img {
 
 #random {
 	margin-bottom: 20px;
-	width: 120px;
+	width: 100px;
 	height: 20px;
 	padding: 10px;
 	border-radius: 0px;
@@ -254,10 +255,14 @@ img {
 
 .btnToday {
 	background: #2c3e52;
+	float: right;
+
 }
 
 .btnRandom {
 	background: #f06f6f;
+	float: left;
+
 }
 
 .randomButton a {
@@ -270,6 +275,11 @@ img {
 
 #month a:hover {
 	text-decoration: none;
+}
+
+.table {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .randomButton a:hover {
