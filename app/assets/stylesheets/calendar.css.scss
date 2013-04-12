@@ -256,13 +256,19 @@ img {
 .btnToday {
 	background: #2c3e52;
 	float: right;
+}
 
+.btnToday:hover {
+	background: #2c3e52;
 }
 
 .btnRandom {
 	background: #f06f6f;
 	float: left;
+}
 
+.btnRandom:hover {
+	background: #f06f6f;
 }
 
 .randomButton a {
