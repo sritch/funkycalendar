@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g id="Captions">
+	<rect x="-192" width="185" height="99"/>
+	<rect y="-36" width="100" height="30"/>
+	<text transform="matrix(1 0 0 1 66 -19.5)" fill="#000000" font-family="'Helvetica'" font-size="2.4">http://thenounproject.com</text>
+	<text transform="matrix(1 0 0 1 7.166 -24.5)"><tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="6.1578">The Noun Project</tspan><tspan x="1.12" y="4.8" fill="#000000" font-family="'Helvetica-Bold'" font-size="4">Icon Template</tspan></text>
+	<text transform="matrix(1 0 0 1 -178.5 10.5)" fill="#000000" font-family="'Helvetica-Bold'" font-size="6.1578">Reminders</text>
+	<line fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" x1="8" y1="-14.5" x2="18" y2="-14.5"/>
+	<line fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" x1="-179" y1="16.5" x2="-162" y2="16.5"/>
+	<g>
+		<g>
+			<g>
+				<rect x="-170.802" y="31.318" fill="#000000" width="8.721" height="8.642"/>
+				<path fill="#000000" d="M-164.455,42.312h4.747v-4.703h-4.747V42.312z M-159.266,42.749h-5.63V37.17h5.63V42.749      L-159.266,42.749z M-166.221,44.062h8.279v-8.203h-8.279V44.062L-166.221,44.062z M-157.5,44.5h-9.163v-9.079h9.163V44.5      L-157.5,44.5z"/>
+				<polygon fill="#000000" points="-166.149,44.133 -166.292,43.991 -158.013,35.787 -157.871,35.929     "/>
+			</g>
+		</g>
+	</g>
+	<rect x="-179" y="58" fill="none" width="35" height="32.5"/>
+	<text transform="matrix(1 0 0 1 -179 60.1299)"><tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Strokes</tspan><tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Try to keep strokes at 4px</tspan><tspan x="0" y="10" fill="#000000" font-family="'Helvetica'" font-size="2.4">Minimum stroke weight is 2px</tspan><tspan x="0" y="14.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">For thicker strokes use even </tspan><tspan x="0" y="17.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">numbers: 6px, 8px etc.</tspan><tspan x="0" y="22" fill="#000000" font-family="'Helvetica-Bold'" font-size="2.4">Remember to expand strokes </tspan><tspan x="0" y="25" fill="#000000" font-family="'Helvetica-Bold'" font-size="2.4">before saving as an SVG </tspan></text>
+	<rect x="-136.5" y="58" fill="none" width="35" height="32.5"/>
+	<text transform="matrix(1 0 0 1 -136.5 60.1299)"><tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Size</tspan><tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Cannot be wider or taller than </tspan><tspan x="0" y="8.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">100px (artboard size)</tspan><tspan x="0" y="13.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Scale your icon to fill as much of </tspan><tspan x="0" y="16.5" fill="#000000" font-family="'Helvetica'" font-size="2.4">the artboard as possible</tspan></text>
+	<rect x="-94" y="58" fill="none" width="35" height="32.5"/>
+	<text transform="matrix(1 0 0 1 -94 60.1299)"><tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Ungroup</tspan><tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">If your design has more than one </tspan><tspan x="0" y="8" fill="#000000" font-family="'Helvetica'" font-size="2.4">shape, make sure to ungroup</tspan></text>
+	<rect x="-50" y="58" fill="none" width="35" height="32.5"/>
+	<text transform="matrix(1 0 0 1 -50 60.1299)"><tspan x="0" y="0" fill="#000000" font-family="'Helvetica-Bold'" font-size="3">Save as</tspan><tspan x="0" y="5" fill="#000000" font-family="'Helvetica'" font-size="2.4">Save as .SVG and make sure &#8220;Use </tspan><tspan x="0" y="8" fill="#000000" font-family="'Helvetica'" font-size="2.4">Artboards&#8221; is checked</tspan></text>
+	<text transform="matrix(1.0074 0 0 1 -125.542 30.5933)" fill="#000000" font-family="'Helvetica'" font-size="2.5731">100px</text>
+	<text transform="matrix(1.0074 0 0 1 -41 39)" fill="#000000" font-family="'Helvetica-Bold'" font-size="5.1462">.SVG</text>
+	<rect x="-126.514" y="34.815" fill="#000000" width="10.261" height="10.185"/>
+	<rect x="-126.477" y="31.766" fill="#000000" width="0.522" height="2.337"/>
+	<rect x="-116.813" y="31.766" fill="#000000" width="0.523" height="2.337"/>
+	<rect x="-127" y="32.337" fill="#000000" width="11.233" height="0.572"/>
+	<g>
+		<rect x="-83.805" y="33.844" fill="#000000" width="10.305" height="10.156"/>
+		<rect x="-76.809" y="28.707" fill="#000000" width="3.308" height="3.261"/>
+	</g>
+	<rect x="-178.5" y="22.5" fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="30"/>
+	<rect x="-136.5" y="22.5" fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="30"/>
+	<rect x="-93.5" y="22.5" fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="30"/>
+	<rect x="-49.5" y="22.5" fill="#000000" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="30"/>
+</g>
+<g id="Your_Icon">
+	
+		<line fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="50.322" y1="47.127" x2="34.151" y2="92.723"/>
+	
+		<line fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="49.361" y1="47.794" x2="66.847" y2="92.682"/>
+	<path fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M24.908,72.321   C10.74,58.659,10.333,36.097,24,21.924C37.66,7.753,60.221,7.338,74.392,20.999c14.167,13.663,14.574,36.225,0.91,50.396   C61.638,85.565,39.077,85.979,24.908,72.321z"/>
+	<g>
+		
+			<path fill="none" stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.1464,13.6603" d="    M20.025,72.722C5.541,56.148,7.046,31.139,23.386,16.868C39.719,2.596,64.697,4.46,79.178,21.033    c14.483,16.573,12.978,41.576-3.354,55.848C59.485,91.158,34.506,89.296,20.025,72.722z"/>
+	</g>
+	
+		<ellipse transform="matrix(0.7719 -0.6358 0.6358 0.7719 -18.7769 42.5419)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="49.892" cy="47.436" rx="2.171" ry="2.273"/>
+	<path fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" d="M30.809,66.608   c-11.135-10.365-11.753-27.795-1.386-38.935c10.366-11.133,27.795-11.76,38.93-1.394c11.134,10.366,11.754,27.794,1.389,38.926   C59.371,76.347,41.939,76.973,30.809,66.608z"/>
+	<g>
+		<path fill="none" d="M22.42,50.895c-2.447-15.011,7.739-29.171,22.759-31.619c15.018-2.448,29.174,7.738,31.619,22.752    c2.452,15.013-7.736,29.172-22.754,31.618C39.026,76.096,24.871,65.906,22.42,50.895z"/>
+		<text transform="matrix(-0.9141 -0.4054 0.4054 -0.9141 42.5376 73.4795)"><tspan x="0" y="0" font-family="'MyriadPro-Bold'" font-size="14">V</tspan><tspan x="8.281" y="-0.092" font-family="'MyriadPro-Bold'" font-size="14" rotate="16.988">V</tspan><tspan x="16.214" y="2.229" font-family="'MyriadPro-Bold'" font-size="14" rotate="34.022">V</tspan><tspan x="23.121" y="6.778" font-family="'MyriadPro-Bold'" font-size="14" rotate="51.148">V</tspan><tspan x="28.383" y="13.155" font-family="'MyriadPro-Bold'" font-size="14" rotate="68.077">V</tspan><tspan x="31.556" y="20.781" font-family="'MyriadPro-Bold'" font-size="14" rotate="85.207">V</tspan><tspan x="32.34" y="28.998" font-family="'MyriadPro-Bold'" font-size="14" rotate="102.167">V</tspan><tspan x="30.688" y="37.112" font-family="'MyriadPro-Bold'" font-size="14" rotate="119.177">V</tspan><tspan x="26.738" y="44.382" font-family="'MyriadPro-Bold'" font-size="14" rotate="136.338">V</tspan><tspan x="20.833" y="50.148" font-family="'MyriadPro-Bold'" font-size="14" rotate="153.21">V</tspan><tspan x="13.486" y="53.966" font-family="'MyriadPro-Bold'" font-size="14" rotate="170.363">V</tspan><tspan x="5.358" y="55.441" font-family="'MyriadPro-Bold'" font-size="14" rotate="-172.618">V</tspan><tspan x="-2.847" y="54.475" font-family="'MyriadPro-Bold'" font-size="14" rotate="-155.671">V</tspan><tspan x="-10.421" y="51.158" font-family="'MyriadPro-Bold'" font-size="14" rotate="-138.537">V</tspan><tspan x="-16.665" y="45.758" font-family="'MyriadPro-Bold'" font-size="14" rotate="-121.608">V</tspan><tspan x="-21.085" y="38.768" font-family="'MyriadPro-Bold'" font-size="14" rotate="-104.532">V</tspan><tspan x="-23.251" y="30.781" font-family="'MyriadPro-Bold'" font-size="14" rotate="-87.419">V</tspan><tspan x="-22.974" y="22.526" font-family="'MyriadPro-Bold'" font-size="14" rotate="-70.483">V</tspan><tspan x="-20.306" y="14.703" font-family="'MyriadPro-Bold'" font-size="14" rotate="-53.417">V</tspan><tspan x="-15.461" y="8.018" font-family="'MyriadPro-Bold'" font-size="14" rotate="-36.344">V</tspan></text>
+		<path fill="none" d="M26.086,61.011c-7.994-12.94-3.981-29.918,8.971-37.911c12.941-7.999,29.912-3.988,37.905,8.956    C80.957,45,76.94,61.974,63.997,69.969C51.051,77.961,34.077,73.954,26.086,61.011z"/>
+		<text transform="matrix(-0.9972 0.0754 -0.0754 -0.9972 53.0176 73.876)"><tspan x="0" y="0" font-family="'MyriadPro-Bold'" font-size="14"> </tspan><tspan x="2.408" y="-0.338" font-family="'MyriadPro-Bold'" font-size="14" rotate="11.207">V</tspan></text>
+	</g>
+</g>
+</svg>
