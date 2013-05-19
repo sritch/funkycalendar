@@ -20,17 +20,17 @@ jQuery.ajaxSetup({
 $(document).ready(function() {
 	$('#month a').live("click", function (){
 		$.get(this.href, null, null, 'script');
-		dater = "month"
+		dater = "month";
         return false;
      });
 	$('.day a').live("click", function (){
 		$.get(this.href, null, null, 'script');
-		dater = "day"
+		dater = "day";
         return false;
      });
 	$('.buttons a').live("click", function (){
 		$.get(this.href, null, null, 'script');
-		dater = "random"
+		dater = "random";
         return false;
      });
 });
