@@ -4,7 +4,6 @@
   <title>Funky Calendar - Find Out Today's Wacky Holiday</title>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag "application", :media => "all" %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,15 +12,12 @@
 	<div class="header">
 		<h1>Wondering what wacky day it is today?</h1>
 	</div>
-	<div class="container">
 		<%= yield %>
-	</div>
 
 </body>
 <footer>
-	<div class="span10 offset2" style="margin-top: 15px; font-size: 14px; margin-bottom: 20px;">
+	<div class="large-7 large-centered columns" style="text-align: left; margin-top: 15px; font-size: 14px; margin-bottom: 20px;">
 		<%= link_to("Funky Calendar", '/') %> - A Project By <a href="http://staticsteven.com">staticsteven</a>
-		<%= link_to( "FAQ", "/faq", :class => "pull-right") %>
 	</div>
 </footer>
 <script>

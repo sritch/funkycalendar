@@ -1,45 +1,48 @@
-<div class="row" style="">
-	<% if @eventDate.strftime("%B") === "January" %>
-	<div class="span3 offset2 dateToday january">
-	<% elsif @eventDate.strftime("%B") === "February"%>
-	<div class="span3 offset2 dateToday february">
-	<% elsif @eventDate.strftime("%B") === "March"%>
-	<div class="span3 offset2 dateToday march">
-	<% elsif @eventDate.strftime("%B") === "April"%>
-	<div class="span3 offset2 dateToday april">
-	<% elsif @eventDate.strftime("%B") === "May"%>
-	<div class="span3 offset2 dateToday may">
-	<% elsif @eventDate.strftime("%B") === "June"%>
-	<div class="span3 offset2 dateToday june">
-	<% elsif @eventDate.strftime("%B") === "July"%>
-	<div class="span3 offset2 dateToday july">
-	<% elsif @eventDate.strftime("%B") === "August"%>
-	<div class="span3 offset2 dateToday august">
-	<% elsif @eventDate.strftime("%B") === "September"%>
-	<div class="span3 offset2 dateToday september">
-	<% elsif @eventDate.strftime("%B") === "October"%>
-	<div class="span3 offset2 dateToday october">
-	<% elsif @eventDate.strftime("%B") === "November"%>
-	<div class="span3 offset2 dateToday november">
-	<% elsif @eventDate.strftime("%B") === "December"%>
-	<div class="span3 offset2 dateToday december">
-		<% end %>
-		<span id="currentdate">
-			<%= @eventDate.strftime("%B") %><br>
-			<span id="dayDate"><%= h @eventDate.day %></span>
-		</span>
-	</div>
-	<div class="span5 todayEvent">
-		<% @events.each do |event| %>
-		<% if event.eventdate === @eventDate %>
+<div class="row">
+	<div class="small-centered large-9 columns">
+		<div class="row">
+			<% if @eventDate.strftime("%B") === "January" %>
+			<div class="small-4 columns dateToday january">
+			<% elsif @eventDate.strftime("%B") === "February"%>
+			<div class="small-4 columns dateToday february">
+			<% elsif @eventDate.strftime("%B") === "March"%>
+			<div class="small-4 columns dateToday march">
+			<% elsif @eventDate.strftime("%B") === "April"%>
+			<div class="small-4 columns dateToday april">
+			<% elsif @eventDate.strftime("%B") === "May"%>
+			<div class="small-4 columns dateToday may">
+			<% elsif @eventDate.strftime("%B") === "June"%>
+			<div class="small-4 columns dateToday june">
+			<% elsif @eventDate.strftime("%B") === "July"%>
+			<div class="small-4 columns dateToday july">
+			<% elsif @eventDate.strftime("%B") === "August"%>
+			<div class="small-4 columns dateToday august">
+			<% elsif @eventDate.strftime("%B") === "September"%>
+			<div class="small-4 columns dateToday september">
+			<% elsif @eventDate.strftime("%B") === "October"%>
+			<div class="small-4 columns dateToday october">
+			<% elsif @eventDate.strftime("%B") === "November"%>
+			<div class="small-4 columns dateToday november">
+			<% elsif @eventDate.strftime("%B") === "December"%>
+			<div class="small-4 columns dateToday december">
+				<% end %>
+				<span id="currentdate">
+					<%= @eventDate.strftime("%B") %><br>
+					<span id="dayDate"><%= h @eventDate.day %></span>
+				</span>
+			</div>
+		<div class="large-8 columns todayEvent">
+			<% @events.each do |event| %>
+			<% if event.eventdate === @eventDate %>
 				<% if event.image %>
-					<%= image_tag("/assets/#{event.image}", :class => "img pull-left") %>
+					<%= image_tag("/assets/#{event.image}") %>
 				<% else %>
 					<%= image_tag("http://placehold.it/100x100", :class => "img img-circle pull-left") %>
 				<% end %>
-				<span class="eventName">It's <%= event.title %>!</span><br>
-				<%= link_to("(Source)", event.link, :class =>"eventSource") %>
+				<span id="eventName">It's <%= event.title %>!</span><br>
+				<%= link_to("(Source)", event.link, :class =>"source") %>
 			</div>
 		<% end %>
-<% end %>
+	<% end %>
+	</div>
 </div>

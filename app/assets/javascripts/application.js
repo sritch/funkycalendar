@@ -28,7 +28,7 @@ $(document).ready(function() {
 		dater = "day"
         return false;
      });
-	$('.randomButton a').live("click", function (){
+	$('.buttons a').live("click", function (){
 		$.get(this.href, null, null, 'script');
 		dater = "random"
         return false;

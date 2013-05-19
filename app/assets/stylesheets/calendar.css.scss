@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
+/*body {
 	background-color: white;
 	color: black;
 	font-family: 'Lato', sans-serif;
@@ -25,12 +25,6 @@ body {
 }
 
 @media (max-width: 768px) {
-	.header {
-	  margin-left: -20px;
-      margin-right: -20px;
-      padding-left: 20px;
-      padding-right: 20px;
-	}
 
 	.todayEvent {
 		min-height: 150px !important; 
@@ -112,9 +106,7 @@ td a:hover {
 	text-decoration: none;
 }
 
-.notmonth {
-	visibility: hidden;
-}
+
 
 .dateToday {
 	width: 180px;
@@ -191,6 +183,255 @@ img {
 	color: black;
 }
 
+
+
+#random {
+	margin-bottom: 20px;
+	width: 100px;
+	height: 20px;
+	padding: 10px;
+	border-radius: 0px;
+	border: none;
+	box-shadow: none;
+}
+
+.btnToday {
+	background: #2c3e52;
+	float: right;
+}
+
+.btnToday:hover {
+	background: #2c3e52;
+}
+
+.btnRandom {
+	background: #f06f6f;
+	float: left;
+}
+
+.btnRandom:hover {
+	background: #f06f6f;
+}
+
+.randomButton a {
+	color: white;
+}
+
+	#month a {
+		color: black;
+	}
+
+	#month a:hover {
+		text-decoration: none;
+	}
+
+.table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.randomButton a:hover {
+	color: white;
+} */
+
+
+body, h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+	font-family: 'Lato', serif;
+	padding: 5px;
+}
+
+/* Top Half */
+
+/* Today's Date */
+
+	.dateToday {
+		width: 180px;
+		text-align: center;
+		min-height: 140px;
+		padding: 5px;
+		margin-bottom: 30px;
+	}
+
+	#dayDate {
+		font-size: 110px;
+		font-weight: bold;
+		line-height: 120px;
+	}
+
+/* Today's Event */
+
+	.todayEvent {
+		border: 6px solid black;
+		min-height: 158px;
+		color: black;
+		padding: 10px;
+		margin-bottom: 20px;
+		text-align: left;
+		max-width: 500px;
+		float: right;
+	}
+
+	.todayEvent img{
+		float: left;
+		padding-right: 20px;
+		max-height: 125px;
+	}
+
+	#eventName {
+		display: inline;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	.source {
+	font-size: 10px;
+	color: black;
+	}
+
+/* Buttons */
+
+	.buttons a:nth-of-type(1){
+		margin-right: 5vw;
+		background: #f06f6f;
+		border: none;
+		font-size: 14px;
+		padding: 15px 0px 15px 0px;
+		font-weight: lighter;
+		width: 100px;
+	}
+
+	.buttons a:nth-of-type(2){
+		margin-left: 5vw;
+		background: #2c3e52;
+		border: none;
+		font-size: 14px;
+		padding: 15px 0px 15px 0px;
+		font-weight: lighter;
+		width: 100px;
+	}
+
+/* Calendar */
+
+	.calendarBox {
+		border: 6px solid black;
+		padding: 0px 5px 10px 5px;
+		text-align: center;
+	}
+
+	.calendarBox a {
+		color: black;
+	}
+
+	#calendar {
+		clear: both;
+		font-size: 12px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.day {
+		font-size: 20px;
+		padding: 0px;
+	}
+
+	.dayBtn {
+		height: 20px;
+		margin: 0px;
+		border-radius: 0px;
+		border: none;
+		background: white;
+		box-shadow: none;
+		color: black;
+		font-size: 14px;
+		padding: 4px 12px;
+		width: 100%;
+		font-weight: lighter;
+	}
+
+	.dayBtn:hover {
+		background-color: #ccc;
+	}
+
+	#month {
+		text-align: center;
+	}
+
+	table {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	td {
+		background-color: white;
+		text-align: center;
+	}
+
+	table thead {
+		background: white;
+		font-size: 16px;
+		text-align: center;
+	}
+
+	table thead tr th {
+		text-align: center;
+
+	}
+
+
+@media (max-width: 700px) {
+
+	.dateToday, .todayEvent {
+	    position: relative;
+	    margin-left: auto;
+	    margin-right: auto;
+	    float: none !important;
+	}
+
+	.todayEvent {
+	/*	max-width: 100%; */
+	}
+
+	.calendarBox {
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 450px) {
+
+	.dayBtn {
+		width: 20px;
+		text-align: center;
+	}
+
+	thead {
+		width: 30px;
+		margin: none;
+	}
+
+	.calendarBox {
+		border: none;
+	}
+
+	#eventName {
+		font-size: 1.2em;
+	}
+
+}
+
+@media (max-width: 350px) {
+	table {
+		margin-left: -15px;
+	}
+}
+
+.notmonth {
+	visibility: hidden;
+}
+
 .january {
 	border: 6px solid #cccccc;
 	color: #ccc;
@@ -241,53 +482,4 @@ img {
 .december {
 	border: 6px solid #141657;
 	color: #141657;
-}
-
-#random {
-	margin-bottom: 20px;
-	width: 100px;
-	height: 20px;
-	padding: 10px;
-	border-radius: 0px;
-	border: none;
-	box-shadow: none;
-}
-
-.btnToday {
-	background: #2c3e52;
-	float: right;
-}
-
-.btnToday:hover {
-	background: #2c3e52;
-}
-
-.btnRandom {
-	background: #f06f6f;
-	float: left;
-}
-
-.btnRandom:hover {
-	background: #f06f6f;
-}
-
-.randomButton a {
-	color: white;
-}
-
-#month a {
-	color: black;
-}
-
-#month a:hover {
-	text-decoration: none;
-}
-
-.table {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.randomButton a:hover {
-	color: white;
 }
