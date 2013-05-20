@@ -23,16 +23,14 @@ $(document).ready(function() {
 		dater = "month"
         return false;
      });
-	$('.day a').live("click", function (){
+	/*$('.day a').live("click", function (){
 		$.get(this.href, null, null, 'script');
 		dater = "day";
-        alert(dater);
         return false;
      });
 	$('.buttons a').live("click", function (){
 		$.get(this.href, null, null, 'script');
 		dater = "random";
-        alert(dater);
         return false;
-     });
+     });*/
 });
