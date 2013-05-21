@@ -1,4 +1,4 @@
 <div class="buttons">
 <%= link_to "Random", {:day => rand(Date.new(2013,1,1)..Date.new(2013,12,31)) }, :id => "random", :class => "button btnRandom" %>
-<%= link_to "Today", {:day => Time.current.to_date }, :id => "random", :class => "button btnToday" %>
+<%= link_to "Today", {:day => Time.now.to_date }, :id => "random", :class => "button btnToday" %>
 </div>

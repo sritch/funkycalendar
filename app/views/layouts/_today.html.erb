@@ -25,7 +25,7 @@
 			<div class="small-4 columns dateToday november">
 			<% elsif @eventDate.strftime("%B") === "December"%>
 			<div class="small-4 columns dateToday december">
-				<% end %>
+			<% end %>
 				<span id="currentdate">
 					<%= @eventDate.strftime("%B") %><br>
 					<span id="dayDate"><%= h @eventDate.day %></span>
@@ -41,7 +41,7 @@
 				<% end %>
 				<span id="eventName">It's <%= event.title %>!</span><br>
 				<%= link_to("(Source)", event.link, :class =>"source") %>
-			</div>
+		</div>
 		<% end %>
 	<% end %>
 	</div>

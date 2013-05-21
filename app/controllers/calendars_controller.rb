@@ -11,9 +11,7 @@ class CalendarsController < ApplicationController
 		@date = params[:month] ? Date.parse(params[:month].gsub('-', '/')) : Time.now.to_date
 		@eventDate = params[:day] ? Date.parse(params[:day].gsub('-', '/')) : Time.now.to_date
 	  }	
-	  format.js {
-
-	  }
+	  format.js
 	 end
 
 	end

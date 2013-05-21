@@ -32,5 +32,5 @@ $(document).ready(function() {
 		$.get(this.href, null, null, 'script');
 		dater = "random";
         return false;
-     });*/
+     }); */
 });

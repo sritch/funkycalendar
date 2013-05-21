@@ -1,8 +1,10 @@
 if (dater == "month") {
 	$("#calendar").html("<%= escape_javascript(render('layouts/calendar')) %>");
-} else if (dater == "day") {
+}
+if (dater == "day") {
 	$("#today").html("<%= escape_javascript(render('layouts/today')) %>");
-} else {
+}
+if (dater == "random") {
 	$("#today").html("<%= escape_javascript(render('layouts/today')) %>");
 	$("#randomness").html("<%= escape_javascript(render('layouts/random')) %>");
 }
