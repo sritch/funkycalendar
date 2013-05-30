@@ -1,9 +1,9 @@
 <div class="small-12 large-7 columns small-centered">
 <div class="calendarBox">
   <h2 id="month">
-       <span style="float: left;"><%= link_to "<", :month => (@date.beginning_of_month-1) %></span>
+       <span style="float: left; margin-left: 20px;"><%= link_to "<", :month => (@date.beginning_of_month-1) %></span>
       <%= h @date.strftime("%B %Y") %>
-      <span style="float: right;"><%= link_to ">", :month => (@date.end_of_month+1).strftime("%Y-%m-01") %></span>
+      <span style="float: right; margin-right: 20px;"><%= link_to ">", :month => (@date.end_of_month+1).strftime("%Y-%m-01") %></span>
   </h2>
   <%= calendar_for(@events, :year => @date.year, :month => @date.month) do |t| %>
     <%= t.head('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun') %>

@@ -4,6 +4,7 @@ class CalendarsController < ApplicationController
 		@events = Event.all
 		@date = params[:month] ? Date.parse(params[:month].gsub('-', '/')) : Time.now.to_date
 		@eventDate = params[:day] ? Date.parse(params[:day].gsub('-', '/')) : Time.now.to_date
+		@month = @eventDate.strftime("%B")
 
 	respond_to do |format|
 	  format.html {
@@ -32,5 +33,6 @@ class CalendarsController < ApplicationController
 
 	def faq
 	end
+
 
 end

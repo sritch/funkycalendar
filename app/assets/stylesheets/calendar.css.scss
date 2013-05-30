@@ -238,7 +238,7 @@ img {
 body, h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	font-family: 'Lato', serif;
-	padding: 5px;
+	color: #4A4A4A;
 }
 
 /* Top Half */
@@ -262,9 +262,9 @@ body, h1, h2, h3, h4, h5, h6 {
 /* Today's Event */
 
 	.todayEvent {
-		border: 6px solid black;
+		border: 6px solid #4A4A4A;
 		min-height: 158px;
-		color: black;
+		color: #4A4A4A;
 		padding: 10px;
 		margin-bottom: 20px;
 		text-align: left;
@@ -275,7 +275,9 @@ body, h1, h2, h3, h4, h5, h6 {
 	.todayEvent img{
 		float: left;
 		padding-right: 20px;
-		max-height: 125px;
+		max-height: 100px;
+		margin-top: 10px;
+		margin-left: 10px;
 	}
 
 	#eventName {
@@ -299,6 +301,9 @@ body, h1, h2, h3, h4, h5, h6 {
 		padding: 15px 0px 15px 0px;
 		font-weight: lighter;
 		width: 100px;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
 	}
 
 	.buttons a:nth-of-type(2){
@@ -309,18 +314,30 @@ body, h1, h2, h3, h4, h5, h6 {
 		padding: 15px 0px 15px 0px;
 		font-weight: lighter;
 		width: 100px;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
 	}
 
 /* Calendar */
 
+	.calendarArea, {
+		width: 100%;
+		background-color: #4CA3B0;
+		padding-top: 5vh;
+		padding-bottom: 15vh;
+		margin: none;
+		min-height: 400px;
+	}
+
 	.calendarBox {
-		border: 6px solid black;
+		/*border: 6px solid white;*/
 		padding: 0px 5px 10px 5px;
 		text-align: center;
 	}
 
 	.calendarBox a {
-		color: black;
+		color: white;
 	}
 
 	#calendar {
@@ -341,7 +358,7 @@ body, h1, h2, h3, h4, h5, h6 {
 		margin: 0px;
 		border-radius: 0px;
 		border: none;
-		background: white;
+		background: #4CA3B0;
 		box-shadow: none;
 		color: black;
 		font-size: 14px;
@@ -351,35 +368,53 @@ body, h1, h2, h3, h4, h5, h6 {
 	}
 
 	.dayBtn:hover {
-		background-color: #ccc;
+		background-color: #48767D;
 	}
 
 	#month {
 		text-align: center;
+		color: white;
 	}
 
 	table {
 		margin-left: auto;
 		margin-right: auto;
 		width: 100%;
+		background-color: #4CA3B0;
+		border: none;
 	}
 
 	td {
-		background-color: white;
+		background-color: #4CA3B0;
 		text-align: center;
 	}
 
 	table thead {
-		background: white;
+		background: #4CA3B0;
 		font-size: 16px;
 		text-align: center;
 	}
 
 	table thead tr th {
 		text-align: center;
+		color: white;
 
 	}
 
+/* Footer */
+
+	.footer {
+		color: white;
+		text-align: center;
+		padding-top: 3vh;
+		line-height: 2em;
+		font-size: 14px;
+		font-weight: lighter;
+	}
+
+	.footer a {
+		color: #2A454F;
+	}
 
 @media (max-width: 700px) {
 
@@ -432,54 +467,54 @@ body, h1, h2, h3, h4, h5, h6 {
 	visibility: hidden;
 }
 
-.january {
+.January {
 	border: 6px solid #cccccc;
 	color: #ccc;
 }
 
-.february {
+.February {
 	border: 6px solid #f7b821;
 	color: #f7b821;
 }
 
-.march {
+.March {
 	border: 6px solid #f06f6f;
 	color: #f06f6f;
 }
 
-.april {
+.April {
 	border: 6px solid #bbe65f;
 	color: #bbe65f;
 }
-.may {
+.May {
 	border: 6px solid #8ee3c2;
 	color: #8ee3c2;
 }
-.june {
+.June {
 	border: 6px solid #90dadf;
 	color: #90dadf;
 }
-.july {
+.July {
 	border: 6px solid #85b6df;
 	color: #85b6df;
 }
-.august {
+.August {
 	border: 6px solid #d291ed;
 	color: #d291ed;
 }
-.september {
+.September {
 	border: 6px solid #fc8ad3;
 	color: #fc8ad3;
 }
-.october {
+.October {
 	border: 6px solid #972626;
 	color: #972626;
 }
-.november {
+.November {
 	border: 6px solid #0d6a95;
 	color: #0d6a95;
 }
-.december {
+.December {
 	border: 6px solid #141657;
 	color: #141657;
 }

@@ -1,36 +1,9 @@
 <div class="row">
 	<div class="small-centered large-9 columns">
 		<div class="row">
-			<% if @eventDate.strftime("%B") === "January" %>
-			<div class="small-4 columns dateToday january">
-			<% elsif @eventDate.strftime("%B") === "February"%>
-			<div class="small-4 columns dateToday february">
-			<% elsif @eventDate.strftime("%B") === "March"%>
-			<div class="small-4 columns dateToday march">
-			<% elsif @eventDate.strftime("%B") === "April"%>
-			<div class="small-4 columns dateToday april">
-			<% elsif @eventDate.strftime("%B") === "May"%>
-			<div class="small-4 columns dateToday may">
-			<% elsif @eventDate.strftime("%B") === "June"%>
-			<div class="small-4 columns dateToday june">
-			<% elsif @eventDate.strftime("%B") === "July"%>
-			<div class="small-4 columns dateToday july">
-			<% elsif @eventDate.strftime("%B") === "August"%>
-			<div class="small-4 columns dateToday august">
-			<% elsif @eventDate.strftime("%B") === "September"%>
-			<div class="small-4 columns dateToday september">
-			<% elsif @eventDate.strftime("%B") === "October"%>
-			<div class="small-4 columns dateToday october">
-			<% elsif @eventDate.strftime("%B") === "November"%>
-			<div class="small-4 columns dateToday november">
-			<% elsif @eventDate.strftime("%B") === "December"%>
-			<div class="small-4 columns dateToday december">
-			<% end %>
-				<span id="currentdate">
-					<%= @eventDate.strftime("%B") %><br>
-					<span id="dayDate"><%= h @eventDate.day %></span>
-				</span>
-			</div>
+			<%= todays_events %>
+				
+
 		<div class="large-8 columns todayEvent">
 			<% @events.each do |event| %>
 			<% if event.eventdate === @eventDate %>
