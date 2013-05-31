@@ -6,7 +6,7 @@
       <span style="float: right; margin-right: 20px;"><%= link_to ">", :month => (@date.end_of_month+1).strftime("%Y-%m-01") %></span>
   </h2>
   <%= calendar_for(@events, :year => @date.year, :month => @date.month) do |t| %>
-    <%= t.head('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun') %>
+    <%= t.head( 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat') %>
     <%= t.day(:day_method => :eventdate) do |date, events| %>
       <div class="day"><%= link_to(date.day,  {:day => date },  :class => "button dayBtn") %></div>
     <% end %>
