@@ -210,14 +210,19 @@ h1 {
 	    float: none !important;
 	}
 
-	.todayEvent {
-	/*	max-width: 100%; */
-	}
-
 	.calendarBox {
 		width: 100%;
 	}
 
+}
+
+@media (max-width: 530px) {
+
+	.todayEvent {
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 90%;
+	}
 }
 
 @media (max-width: 450px) {
